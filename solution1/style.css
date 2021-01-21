@@ -1,0 +1,34 @@
+#councillors {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #councillors td, #councillors th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #councillors tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #councillors tr:hover {background-color: #ddd;}
+  
+  #councillors th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }
+  #councillors {
+    visibility:hidden;
+    opacity:0;
+    transition: visibility 0.3s linear,opacity 0.3s linear;
+  }
+  #councillors.visible {
+    visibility: visible;
+    opacity:1;
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
