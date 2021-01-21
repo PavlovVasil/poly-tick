@@ -4,18 +4,24 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import { DataTable } from '../components/DataTable';
+import { Councillors, Councils, Affairs } from '../views'
+import { TopNav } from '../components/TopNav';
 
 export const MainRouter = () => {
   return (
     <Router>
-      <div>
+      <TopNav />
         <Switch>
           <Route exact path="/">
-            <DataTable />
+            <Councillors />
+          </Route>
+          <Route exact path="/councils">
+            <Councils />
+          </Route>
+          <Route exact path="/affairs">
+            <Affairs />
           </Route>
         </Switch>
-      </div>
     </Router>
   );
 }
